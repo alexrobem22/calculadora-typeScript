@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <title>Calculadora</title>
+
+   
+</head>
+<body>
+
+    <header>
+        <div class="box" >
+            
+            <div class="box-tamanho">
+                <div class="box-calculadora">
+                    <div class="calculadora-resultado">
+                        
+                        <p id="resultado"></p>
+
+                    </div>
+
+                    <div class="calculadora-button">
+                        <table>
+                            <tr>
+                                <td><button class="button"  onclick="zerar()">C</button></td>
+                                <td><button class="button"  onclick="apagar()"><</button></td>
+                                <td><button class="button" onclick="valores('/')">/</button></td>
+                                <td><button class="button" onclick="valores('*')">X</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="button" onclick="valores('7')">7</button></td>
+                                <td><button class="button" onclick="valores('8')">8</button></td>
+                                <td><button class="button" onclick="valores('9')">9</button></td>
+                                <td><button class="button" onclick="valores('-')">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="button" onclick="valores('4')">4</button></td>
+                                <td><button class="button" onclick="valores('5')">5</button></td>
+                                <td><button class="button" onclick="valores('6')">6</button></td>
+                                <td><button class="button"  onclick="valores('+')">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="button"  onclick="valores('1')">1</button></td>
+                                <td><button class="button"  onclick="valores('2')">2</button></td>
+                                <td><button class="button"  onclick="valores('3')">3</button></td>
+                                <td rowspan="2"><button class="button" style="height: 125px;" onclick="calcular()">=</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="button" style="width:127px;"  id="0" onclick="valores(0)">0</button></td>
+                                <td><button class="button" id="." onclick="valores('.')">.</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="calculadora.js"></script>
+   
+</body>
+</html>

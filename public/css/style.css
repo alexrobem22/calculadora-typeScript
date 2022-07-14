@@ -1,0 +1,116 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;/*tira a linha do A*/
+    list-style: none;/*tira as bolinha do li*/
+    font-family: 'Open Sans';
+}
+
+:root {
+    --azul-claro: #1F3F7C;
+    --azul-bebe: rgb(192, 212, 229);
+    --cinza: rgb(98, 92, 92);
+}
+
+
+.box{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(35deg, blue, red);
+    /* background-image: url(../public/img/3.jpg); */
+    /*background-repeat: no-repeat;/*para nao repetir*/
+    /*background-position: center center;/*o primeiro paramentro posso passar letf,top etc para direcionar a imagem*/
+  
+
+    /* border: 2px solid red; */
+}
+
+
+.box-tamanho{
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+    z-index: 50;
+}
+.box-calculadora{
+
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.358);
+
+
+    /* border: 1px solid red; */
+}
+
+.calculadora-resultado{
+    width: 260px;
+    height: 80px;
+    display:flex;
+    text-align: right;
+    align-items: center;
+    background-color: var(--azul-bebe);
+    margin: 5px 0px 5px 0px;
+    padding: 0px 10px;
+    overflow: hidden;
+
+    overflow-x: scroll;
+
+    /* border: 1px solid black; */
+}
+.calculadora-resultado p{
+    width: 260px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: fantasy;
+    padding: 0px 12px;
+}
+
+.calculadora-button{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+.button{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+    /* transition: 2.5s; */
+}
+.button:hover{
+   
+    background-color: var(--cinza);
+    color: #f0f8ff;
+}
+
+
+
+
+
+
+
+
